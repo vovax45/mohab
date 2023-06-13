@@ -91,3 +91,15 @@ document.addEventListener("click", function(e) {
 document.addEventListener("contextmenu", function(e) {
   e.preventDefault();
 }, false);
+
+  // تحديث العدد الحالي للزيارات في LocalStorage
+let currentVisits = localStorage.getItem("visits");
+if (currentVisits) {
+  currentVisits = parseInt(currentVisits) + 1;
+} else {
+  currentVisits = 1;
+}
+localStorage.setItem("visits", currentVisits);
+
+// عرض العدد الحالي للزيارات في الصفحة
+document.getElementById("visits").innerHTML += currentVisits; 
