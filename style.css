@@ -502,19 +502,6 @@ body {
   z-index: 1;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 .circle {
   border-radius: 50%;
   background: linear-gradient(135deg, transparent 25%, #149279);
@@ -526,4 +513,12 @@ body {
   height: 130px;
   top: 130px;
   right: 140px;
+}
+
+
+/* تنسيق عرض الزيارات */
+#visits {
+  font-size: 20px;
+  font-weight: bold;
+  color: blue;
 }
